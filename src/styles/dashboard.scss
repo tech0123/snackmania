@@ -1,0 +1,135 @@
+@import "colors";
+
+
+.dashboard {
+    background-color: $pink;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem;
+
+    >main {
+        background-color: white;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        padding-bottom: 3rem;
+
+        >h2 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+
+        >article {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+
+
+            >div {
+                background-color: $red;
+                color: white;
+                margin: 0.5rem;
+                height: 9rem;
+                width: 14rem;
+                padding: 2.5rem 0;
+
+
+                >h3 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                >p {
+                    padding: 0.2rem;
+                    font-weight: lighter;
+                }
+
+            }
+        }
+
+        >section>div {
+            display: flex; //flex-direction:column; use this 
+            align-items: center;
+            justify-content: center;
+
+            >aside {
+                width: 60%;
+            }
+        }
+
+
+        >section>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 4rem;
+
+            >a {
+                background-color: $red;
+                color: white;
+                padding: 1rem 1.5rem;
+                margin: 1rem;
+                border-radius: 0;
+                text-align: center;
+                border: none;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+
+                >svg {
+                    margin-right: 0.5rem;
+                }
+
+                &:hover {
+                    background-color: $reddark !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .dashboard {
+        padding: 0;
+
+        >main {
+
+            >article {
+                display: grid;
+
+                >div {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            >section>div {
+
+                >aside {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+
+            >section>div {
+
+                display: grid;
+
+                >a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    margin-bottom: 1.5rem;
+                }
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import "colors";
+
+footer {
+
+    text-align: center;
+
+    min-height: 300px;
+    background-color: $dark;
+    padding: 4rem;
+
+    color: white;
+    align-items: center;
+
+    h2 {
+        color: $pink;
+        font-family: fantasy;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+
+    aside {
+        text-align: center;
+
+        display: inline-flex;
+
+        a {
+            margin-left: 0.1rem;
+            font-size: 1.2rem;
+            color: lightcoral;
+
+            &:hover {
+                color: $lightdark;
+            }
+        }
+
+        h4 {
+            margin-right: 0.5rem;
+        }
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer {
+
+        text-align: center;
+    }
+}

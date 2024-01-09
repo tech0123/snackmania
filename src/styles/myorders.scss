@@ -1,0 +1,111 @@
+@import "colors";
+
+
+.myorders {
+    background-color: $pink;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem;
+
+    >main {
+        background-color: white;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        padding-bottom: 6rem;
+
+        >h2 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.orders>table>tbody>tr>td {
+    padding: 2rem;
+}
+
+.orders {
+    background-color: rgb(246, 246, 246);
+    margin: 1.9rem;
+    margin-left: 2.2rem;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+
+    // >.idqty{
+    //     display: flex ;
+    //     align-items: center ;
+    //     justify-content: space-between;
+
+    // }
+
+}
+
+.orders>table>tbody>tr>td>.row {
+    display: flex;
+    align-items: center;
+    margin: 0.1rem;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 0;
+    margin-left: 1.5rem;
+
+}
+
+.actionorder {
+    >a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background-color: $red;
+        color: white;
+
+        &:hover {
+            color: lightcoral;
+        }
+    }
+}
+
+
+
+.colordedoorder {
+    background-color: $red;
+    width: 4%;
+    padding: 0 !important;
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width:600px) {
+
+    .myorders {
+        padding: 0;
+    }
+
+    .orders {
+        margin: 1.5rem 0;
+    }
+
+
+
+    .orders>table>tbody>tr>td {
+        padding-bottom: 0.5rem;
+    }
+
+    .colordedoorder {
+
+        width: 9%;
+        border-radius: 0;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0 !important;
+    }
+
+    .orders>table>tbody>tr>td>.row {
+        margin-left: 0;
+    }
+}

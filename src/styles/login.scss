@@ -1,0 +1,46 @@
+@import "colors";
+
+
+.login {
+
+    background-color: $pink;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    >button {
+        background-color: #333333;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        text-align: center;
+        border: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+
+        >svg {
+            margin-right: 0.5rem;
+        }
+
+        &:hover {
+            background-color: $reddark;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .login {
+        padding: 0;
+
+        >main>a {
+            width: 100%;
+        }
+    }
+}

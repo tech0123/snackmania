@@ -1,0 +1,114 @@
+@import "colors";
+
+
+.about {
+    background-color: $pink;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem;
+
+    >main {
+        background-color: white;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        padding-bottom: 4rem;
+
+        >h2 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+
+        >article {
+            >h2 {
+
+                letter-spacing: 0.4rem;
+                text-align: center;
+                font-weight: lighter;
+                text-transform: uppercase;
+                margin: 0.9rem;
+
+            }
+
+            >p {
+                letter-spacing: 3px;
+                word-spacing: 3px;
+                padding: 1rem;
+                width: 50%;
+                text-align: center;
+                margin: auto;
+            }
+
+            >a {
+                background-color: $dark;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.5rem;
+                height: 2.5rem;
+                color: white;
+                font-size: 1.5rem;
+                transition: all 0.3s;
+                margin: auto;
+
+                &:hover {
+                    color: $red;
+                    transform: scale(1.1);
+                }
+
+                margin-bottom: 4.5rem;
+
+            }
+        }
+
+
+
+
+        >article {
+            text-align: center;
+
+            >div {
+
+                margin: 2rem;
+
+
+                >img {
+
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 100%;
+                }
+
+                >h3 {
+                    margin: 1rem;
+                }
+
+                >p {
+                    text-align: center;
+                    margin: auto;
+                    width: 50%;
+                    letter-spacing: 2px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about {
+        padding: 0;
+
+        main>article>p {
+            width: 100%;
+        }
+
+        main>article>div>p {
+            width: 100%;
+        }
+    }
+}

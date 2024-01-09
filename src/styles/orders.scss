@@ -1,0 +1,151 @@
+@import "colors";
+
+
+.myadminorders {
+    background-color: $pink;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5rem;
+
+    >main {
+        background-color: white;
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        padding-bottom: 6rem;
+
+        >h2 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.adminorders {
+    background-color: rgb(246, 246, 246);
+    margin: 1.9rem;
+    margin-left: 2.2rem;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+
+}
+
+.adminorders>table>tbody>tr>td>.row {
+    display: flex;
+    align-items: center;
+    margin: 0.1rem;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 0;
+    margin-left: 1.5rem;
+}
+
+.actionadmin {
+    text-align: center;
+
+    >a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background-color: $red;
+        color: white;
+        margin: 1.5rem 0;
+        font-size: 1rem;
+
+        &:hover {
+            color: lightcoral;
+        }
+
+    }
+
+    >button {
+        font-size: 1rem;
+
+        cursor: pointer;
+        border: none;
+        background-color: $red;
+        color: white;
+
+
+
+        &:hover {
+            color: lightcoral;
+        }
+    }
+
+}
+
+.adminorders>table>tbody>tr>td {
+    padding: 2rem;
+}
+
+.colordedoadmin {
+    background-color: $red;
+    width: 4%;
+    padding: 0 !important;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .myadminorders {
+        padding: 0;
+    }
+
+    .adminorders {
+        margin: 1.5rem 0;
+    }
+
+
+    .colordedoadmin {
+
+        display: block;
+        background-color: $red;
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 0.4rem;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .actionadmin {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem;
+        
+
+        a,button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0.5rem;
+            padding: 0.15rem 0.4rem;
+        }
+    }
+
+    .adminorders>table>tbody>tr>td {
+        display: block;
+        padding-bottom: 1rem;
+    }
+
+    .adminorders>table>tbody>tr>td>.row {
+        margin-left: 0;
+    }
+
+
+
+}

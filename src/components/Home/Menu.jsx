@@ -47,9 +47,7 @@ const Menu = () => {
       <div >
 
         <MenuCard itemNum={1} burgerSrc={burger1} delay={0.1} price={200} title="Cheese Burger" handler={addToCartHandler} />
-
         <MenuCard itemNum={2} burgerSrc={burger2} delay={0.5} price={500} title="Veg Cheese Burger" handler={addToCartHandler} />
-
         <MenuCard itemNum={3} burgerSrc={burger3} delay={0.8} price={1000} title="Cheese Burger With Fries" handler={addToCartHandler} />
 
       </div>

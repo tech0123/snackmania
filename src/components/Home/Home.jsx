@@ -1,22 +1,22 @@
 import React from 'react'
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import Founder from './Founder';
 import Menu from './Menu';
-
+import Typewriter  from 'typewriter-effect';
 
 const Home = () => {
-  
-  const options= {
-    initial:{
+
+  const options = {
+    initial: {
       x: "-100%",
       opacity: 0
     },
-    whileInView:{
+    whileInView: {
       x: 0,
       opacity: 1
     },
   }
-  
+
   return (
 
     <>
@@ -25,18 +25,31 @@ const Home = () => {
 
         <div>
           <motion.h1 {...options}>
-            SnacksMania</motion.h1>
 
-          <motion.p 
-          {...options}
-          transition={{
-            delay:0.2,
-          }}
+<Typewriter 
+
+options={{
+  strings:"SnacksMania",
+  autoStart: true,
+  loop: true,
+  cursor:"",
+  wrapperClassName: "typewriter"
+}}
+/>
+            
+
+          </motion.h1>
+
+          <motion.p
+            {...options}
+            transition={{
+              delay: 0.2,
+            }}
           >
             Give Yourself A Tasty Snacks</motion.p>
         </div>
 
-        <motion.a href="#menu" 
+        <motion.a href="#menu"
           initial={{
             y: "-100%",
             opacity: 0
@@ -46,16 +59,16 @@ const Home = () => {
             opacity: 1
           }}
           transition={{
-            delay:0.6,
+            delay: 0.6,
           }}
-        
+
         >
           Explore Menu</motion.a>
 
       </section>
       <Founder />
-      <Menu/>
-    
+      <Menu />
+
     </>
   )
 }

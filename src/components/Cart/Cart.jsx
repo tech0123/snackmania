@@ -182,8 +182,6 @@ const Cart = () => {
                 )}
 
 
-
-
             </main>
 
 

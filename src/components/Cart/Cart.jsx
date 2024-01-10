@@ -155,7 +155,7 @@ const Cart = () => {
                     <CartItem title={"Veg Cheese Burger"} img={burger2} value={vegCheeseBurger} increment={() => increment(2)} decrement={() => decrement(2)} />
                 )}
 
-                {burgerWithFries !== 0 && cheeseBurger !== 0 && vegCheeseBurger !== 0 && (
+                {(burgerWithFries !== 0 || cheeseBurger !== 0 || vegCheeseBurger !== 0)  && (
                     <article>
                         <div>
                             <h4>Sub Total</h4>

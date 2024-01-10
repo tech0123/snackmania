@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import Founder from './Founder';
 import Menu from './Menu';
-import Typewriter  from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
@@ -26,17 +26,18 @@ const Home = () => {
         <div>
           <motion.h1 {...options}>
 
-<Typewriter 
+            <Typewriter
 
-options={{
-  strings:"SnacksMania",
-  autoStart: true,
-  loop: true,
-  cursor:"",
-  wrapperClassName: "typewriter"
-}}
-/>
-            
+              options={{
+                strings: "SnacksMania",
+                autoStart: true,
+                loop: true,
+                cursor: "",
+                wrapperClassName: "typewriter",
+                skipAddStyles: true,
+              }}
+            />
+
 
           </motion.h1>
 

@@ -25,7 +25,7 @@ const Home = () => {
 
         <div>
           <motion.h1 {...options}>
-            SnackMania</motion.h1>
+            SnacksMania</motion.h1>
 
           <motion.p 
           {...options}

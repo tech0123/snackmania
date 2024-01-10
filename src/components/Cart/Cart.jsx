@@ -145,30 +145,37 @@ const Cart = () => {
                 {vegCheeseBurger !== 0 && (
                     <CartItem title={"Veg Cheese Burger"} img={burger2} value={vegCheeseBurger} increment={() => increment(2)} decrement={() => decrement(2)} />
                 )}
-                
 
-                <article>
-                    <div>
-                        <h4>Sub Total</h4>
-                        <p>₹{subTotal}</p>
-                    </div>
-                    <div>
-                        <h4>Tax</h4>
-                        <p>₹{tax}</p>
-                    </div>
-                    <div>
-                        <h4>Shipping Charges</h4>
-                        <p>₹{shippingCharges}</p>
-                    </div>
-                    <div>
-                        <h4>Total</h4>
-                        <p>₹{total}</p>
-                    </div>
+                {burgerWithFries !== 0 && cheeseBurger !== 0 && vegCheeseBurger !== 0 && (
+                    <article>
+                        <div>
+                            <h4>Sub Total</h4>
+                            <p>₹{subTotal}</p>
+                        </div>
+                        <div>
+                            <h4>Tax</h4>
+                            <p>₹{tax}</p>
+                        </div>
+                        <div>
+                            <h4>Shipping Charges</h4>
+                            <p>₹{shippingCharges}</p>
+                        </div>
+                        <div>
+                            <h4>Total</h4>
+                            <p>₹{total}</p>
+                        </div>
 
 
-                    <Link to="/shipping">Checkout</Link>
+                        <Link to="/shipping">Checkout</Link>
 
-                </article>
+                    </article>
+
+                )}
+
+
+                {burgerWithFries === 0 && cheeseBurger === 0 && vegCheeseBurger === 0 && (
+                    <h2>Turn Hunger into Happiness, Exploring a Snacking Paradise with SnacksMania!</h2>
+                )}
 
             </main>
 

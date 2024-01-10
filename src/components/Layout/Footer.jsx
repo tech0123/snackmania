@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
 
             <div>
-                <h2>SnackMania</h2>
+                <h2>SnacksMania</h2>
                 <br />
                 <p>We are Trying to give You the Best Taste Possible.</p>
                 <br />
@@ -25,7 +25,7 @@ const Footer = () => {
                 <br />
                 <br />
                 
-                <strong>All Rights Reserved @SnackMania</strong>
+                <strong>All Rights Reserved @SnacksMania</strong>
                 
             </div>
 

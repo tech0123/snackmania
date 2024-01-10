@@ -54,7 +54,7 @@ const Confirmorder = () => {
                 "key": key,
                 "amount": order.amount,
                 "currency": "INR",
-                "name": "SnackMania",
+                "name": "SnacksMania",
                 "description": "Snacks App",
                 "order_id": order.id,
                 "handler": function (response) {

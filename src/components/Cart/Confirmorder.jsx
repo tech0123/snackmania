@@ -54,8 +54,8 @@ const Confirmorder = () => {
                 "key": key,
                 "amount": order.amount,
                 "currency": "INR",
-                "name": "MBA BURGER WALA",
-                "description": "Burger App",
+                "name": "SnackMania",
+                "description": "Snacks App",
                 "order_id": order.id,
                 "handler": function (response) {
 

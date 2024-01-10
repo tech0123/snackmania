@@ -136,31 +136,16 @@ const Cart = () => {
 
                 <h2>Cart</h2>
 
-                if (burgerWithFries === 0){
+                {burgerWithFries !== 0 && (
                     <CartItem title={"Cheese Burger with French Fries"} img={burger3} value={burgerWithFries} increment={() => increment(3)} decrement={() => decrement(3)} />
-                }
-                else
-                {
-                    <CartItem title={"Cheese Burger with French Fries"} img={burger3} value={burgerWithFries} increment={() => increment(3)} decrement={() => decrement(3)} />
-                }
-
-                if (cheeseBurger === 0){
-
-                    <CartItem style={{ display: "none" }} title={"Cheese Burger"} img={burger1} value={cheeseBurger} increment={() => increment(1)} decrement={() => decrement(1)} />
-                }
-                else
-                {
-                    <CartItem style={{ display: "block" }} title={"Cheese Burger"} img={burger1} value={cheeseBurger} increment={() => increment(1)} decrement={() => decrement(1)} />
-                }
-                if (vegCheeseBurger === 0){
+                )}
+                {cheeseBurger !== 0 && (
+                    <CartItem title={"Cheese Burger"} img={burger1} value={cheeseBurger} increment={() => increment(1)} decrement={() => decrement(1)} />
+                )}
+                {vegCheeseBurger !== 0 && (
                     <CartItem title={"Veg Cheese Burger"} img={burger2} value={vegCheeseBurger} increment={() => increment(2)} decrement={() => decrement(2)} />
-                }
-                else
-                {
-                    <CartItem title={"Veg Cheese Burger"} img={burger2} value={vegCheeseBurger} increment={() => increment(2)} decrement={() => decrement(2)} />
-                }
-
-
+                )}
+                
 
                 <article>
                     <div>

@@ -25,7 +25,7 @@ const Home = () => {
 
         <div>
           <motion.h1 {...options}>
-            MBA Burger Wala</motion.h1>
+            SnackMania</motion.h1>
 
           <motion.p 
           {...options}
@@ -33,7 +33,7 @@ const Home = () => {
             delay:0.2,
           }}
           >
-            Give Yourself A Tasty Burger</motion.p>
+            Give Yourself A Tasty Snacks</motion.p>
         </div>
 
         <motion.a href="#menu" 

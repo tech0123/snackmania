@@ -30,9 +30,9 @@ const Founder = () => {
                 <img src={me} alt="founder" height={200} width={200} />
 
                 <h3>HD</h3>
-                <p>Hey, Everyone I am HD, the Founder of BurgerLife.
+                <p>Hey, Everyone I am HD, the Founder of SnacksMania.
                     <br />
-                    Our Aim is to Create the Most Tasty Burger On Planet.
+                    Our Aim is to Create the Most Tasty Snacks On Planet.
                 </p>
 
             </motion.div>

@@ -136,6 +136,15 @@ const Cart = () => {
 
                 <h2>Cart</h2>
 
+
+
+                {burgerWithFries === 0 && cheeseBurger === 0 && vegCheeseBurger === 0 && (
+                    <div style={{textAlign:"center"}}>
+                        <h4>Turn Hunger into Happiness</h4>
+                        <h6>Exploring a Snacking Paradise with SnacksMania!</h6>
+                    </div>
+                )}
+
                 {burgerWithFries !== 0 && (
                     <CartItem title={"Cheese Burger with French Fries"} img={burger3} value={burgerWithFries} increment={() => increment(3)} decrement={() => decrement(3)} />
                 )}
@@ -173,9 +182,7 @@ const Cart = () => {
                 )}
 
 
-                {burgerWithFries === 0 && cheeseBurger === 0 && vegCheeseBurger === 0 && (
-                    <h2>Turn Hunger into Happiness, Exploring a Snacking Paradise with SnacksMania!</h2>
-                )}
+
 
             </main>
 

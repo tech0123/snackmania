@@ -22,7 +22,7 @@ import "./styles/loading.scss";
 
 
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Layout/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Layout/Footer";
